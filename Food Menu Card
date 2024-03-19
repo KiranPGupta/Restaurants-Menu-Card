@@ -1,0 +1,168 @@
+print("")
+print("********************Welcome To our Menu**************************")
+print("")
+
+billTotal = 0
+
+while True:
+    print("Menu Card")
+    print("=========")
+    print("1. Soft Drinks")
+    print("2. Starters")
+    print("3. Main Course")
+    print("4. Dessert")
+    print("5. Generate Bill")
+    print("0. Close Menu")
+
+    choice = int(input("Enter your choice : "))
+    items = 0
+
+    if(choice == 0):
+        break
+
+    else:
+        if(choice == 1):
+            while True:
+                print("")
+                print("")
+                print("Soft Drinks Menu")
+                print("================")
+                print("1. Coca Cola \t: Rs. 20")
+                print("2. Limca \t: Rs. 20")
+                print("3. Mirinda \t: Rs. 20")
+                print("4. Sprite \t: Rs. 20")
+                print("5. Back to main menu")
+
+                choice = int(input("What drink do you prefer : "))
+
+                if(choice == 5):
+                    print("")
+                    print("")
+                    break
+                   
+                else:
+                    items = int(input("How many drinks you wish to order : "))
+                    if(choice == 1):
+                        print(items, "Coke added")
+                        billTotal += 20 * items
+                    elif(choice == 2):
+                        print(items, "Limca added")
+                        billTotal += 20 * items
+                    elif(choice == 3):
+                        print(items, "Mirinda added")
+                        billTotal += 20 * items
+                    elif(choice == 4):
+                        print(items, "Sprite added")
+                        billTotal += 20 * items
+              
+        elif(choice == 2):
+            while True:
+                print("")
+                print("")
+                print("Starters Menu")
+                print("================")
+                print("1. Samosa \t: Rs. 10")
+                print("2. Bread Pakoda : Rs. 15")
+                print("3. Maggie \t: Rs. 50")
+                print("4. Sandwich \t: Rs. 30")
+                print("5. Back to main menu")
+
+                choice = int(input("What drink do you prefer : "))
+
+                if(choice == 5):
+                    print("")
+                    print("")
+                    break
+                else:
+                    items = int(input("How many of this item you wish to order : "))
+                   
+                    if(choice == 1):
+                        print(items, "Samosa added")
+                        billTotal += 10 * items
+                    elif(choice == 2):
+                        print(items, "Bread Pakoda added")
+                        billTotal += 15 * items
+                    elif(choice == 3):
+                        print(items, "Maggie added")
+                        billTotal += 50 * items
+                    elif(choice == 4):
+                        print(items, "Sandwich added")
+                        billTotal += 30 * items
+                 
+        elif (choice==3):
+            while True:
+                print("")
+                print("")
+                print("================")
+                print("\tMain Menu")
+                print("1.Veg Thali \t Rs.300/-")
+                print("2.Non Veg Thali\t Rs.500/-")
+                print("3.Vegan Thali\t Rs. 350/-")
+                print("4.Jain Thali\t Rs. 400/-")
+                print("5.Back to main Menu")
+            
+                choice=int(input("Select your favourite Mains: "))
+                    
+                if(choice==5):
+                     break
+                else:
+                    items = int(input("How many of this item you wish to order : "))
+
+                    if(choice==1):
+                        print(items,"Veg Thali Added")
+                        billTotal += 300 * items
+                    elif(choice==2):
+                        print(items,"Non-Veg Thali Added")
+                        billTotal += 500 * items
+    
+                    elif(choice==3):  
+                        print(items,"Vegan Thali Added")
+                        billTotal += 350 * items
+        
+                    elif(choice==4):
+                         print(items,"Jain Thali Added")
+                         billTotal += 400 * items
+            
+        elif (choice==4):
+            while True:
+                print("")
+                print("")
+                print("================")
+                print("\tDessert")
+                print("1.Kheer\t Rs.150/-")
+                print("2.Gulab Jamun\t Rs.50/ 2pc")
+                print("3.Rabdi\t Rs.100/-")
+                print("4.Rassgulla\t Rs.50/ 2pc")
+                print("5.Back to main Menu")
+            
+                choice=int(input("Select your favourite Dessert: "))
+                
+                if(choice==5):
+                    print("")
+                    print("")
+                    break
+                
+                else:
+                    items = int(input("How many of this item you wish to order : "))
+        
+                    if(choice==1):
+                        print(items,"Kheer")
+                        billTotal += 150 * items
+        
+                    elif(choice==2): 
+                        print(items,"Gulab Jamun 2pc")
+                        billTotal += 50 * items
+        
+                    elif(choice==3):  
+                        print(items,"Rabdi")
+                        billTotal += 100 * items
+        
+                    elif(choice==4):
+                        print(items,"Rasgulla 2pc")
+                        billTotal += 50 * items
+                    
+        elif(choice == 5):
+            print("Your total bill amount is : Rs. ", billTotal)
+            print("\t~\U0001F607 Thanks for visiting Us \U0001F607~")
+            break
+
